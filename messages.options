@@ -1,0 +1,62 @@
+# messages.options
+
+Initialize.session_id			max_size:64
+
+Features.echoed_session_id		max_size:64
+Features.algo					max_count:2
+Features.device_name			max_size:40
+
+Ping.greeting					max_size:512
+
+PingResponse.echoed_greeting	max_size:512
+PingResponse.echoed_session_id	max_size:64
+
+OtpAck.otp						max_size:16
+
+# DeleteWallet.wallet_handle		default:0
+
+# NewWallet.wallet_number			default:0
+NewWallet.wallet_name			max_size:40
+# NewWallet.is_hidden				default:false
+
+Address.public_key				max_size:65
+Address.address					max_size:20
+
+AddressPubKey.public_key		max_size:33
+
+SignatureCompleteData.signature_data_complete	max_size:109
+# SignatureCompleteData.signature_ecdsa_complete	max_size:33
+
+# LoadWallet.wallet_number		default:0
+
+FormatWalletArea.initial_entropy_pool	max_size:32
+
+ChangeWalletName.wallet_name	max_size:40
+
+ChangeDeviceName.device_name	max_size:40
+
+WalletInfo.wallet_name			max_size:40
+WalletInfo.wallet_uuid			max_size:16
+
+# BackupWallet.is_encrypted		default:false
+# BackupWallet.device				default:0
+
+RestoreWallet.seed				max_size:64
+
+DeviceUUID.device_uuid			max_size:16
+
+MasterPublicKey.public_key		max_size:65
+MasterPublicKey.chain_code		max_size:32
+
+CurrentWalletXPUB.xpub			max_size:112
+
+SignatureMessage.signature_data_complete_message	max_size:1024
+
+#DisplayAddressAsQR.address_handle_index default:0
+
+SetBulk.bulk 					max_size:21232
+
+
+
+
+
